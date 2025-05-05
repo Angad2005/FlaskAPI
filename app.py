@@ -14,9 +14,9 @@ def analyze_sentiment():
     analysis = TextBlob(text)
     sentiment_score = analysis.sentiment.polarity
 
-    if sentiment_score > 0:
+    if sentiment_score > 0.1:
         sentiment = 'positive'
-    elif sentiment_score < 0:
+    elif sentiment_score < -0.1:
         sentiment = 'negative'
     else:
         sentiment = 'neutral'
