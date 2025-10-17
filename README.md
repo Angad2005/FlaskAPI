@@ -33,28 +33,27 @@ Make sure you have Python and pip installed on your system.
 
 2. **Navigate to the project directory**
 
-Bash
+   ```bash
+   cd your-repository-name
 
-cd your-repository-name
-Create and activate a virtual environment
+3. **Create and activate a virtual environment**
 
-On macOS/Linux:
+- On macOS/Linux:
 
-Bash
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
 
-python3 -m venv venv
-source venv/bin/activate
-On Windows:
+- On Windows:
 
-Bash
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate
 
-python -m venv venv
-.\venv\Scripts\activate
-Install the required packages
+4. **Install the required packages**
 
-Bash
-
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 (Note: To generate the requirements.txt file, run pip freeze > requirements.txt after installing Flask.)
 
 Running the Application
